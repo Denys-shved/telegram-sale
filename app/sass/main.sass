@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@700&family=Rubik:wght@700&display=swap')
+@import config
+
+//font-family: 'Fira Sans Condensed', sans-serif
+//font-family: 'Rubik', sans-serif
+// CUSTOM USER STYLES & IMPORTS
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+    padding: 0 10px
+.bg_screen
+    background: url('../images/bg_1_ screen.png') no-repeat left top
+.head
+    display: flex
+    justify-content: space-between
+    align-items: baseline
+    margin-bottom: 60px
+    &__logo
+        font-family: 'Rubik'
+        font-weight: bold
+        font-size: 24px
+        line-height: 28px
+        background: url('../images/bg_logo.svg' )center center no-repeat
+        padding: 40px 0 40px 0
+        a
+            color: #2DAFD7
+    &__consultation
+        border: 2px solid #2DAFD7
+        box-sizing: border-box
+        border-radius: 5px
+        a
+            display: block
+            text-transform: uppercase
+            color: #2DAFD7
+            font-family: 'Rubik'
+            font-weight: bold
+            font-size: 15px
+            padding: 15px
+.signals
+    display: flex
+    margin-bottom: 120px
+    align-items: flex-end
+    &__img
+        width: 295px
+        height: 581px
+        background: url('../images/phone.png') no-repeat
+    &__title
+        text-transform: uppercase
+        font-family: 'Rubik'
+        font-weight: bold
+        font-size: 44px
+        line-height: 122.6%
+        letter-spacing: 0.04em
+        color: #195B84
+        margin-right: 115px
+        margin-bottom: 25px
+        span
+            color: #2DAFD7
+            position: relative
+            &::after
+                position: absolute
+                content: ''
+                height: 366px
+                width: 298px
+                background: url('../images/line_icon_telegram.svg' )center center no-repeat
+                top: 25px
+                left: 20px
+    &__inputs
+        max-width: 380px
+        input
+            width: 100%
+            height: 100%
+            padding: 15px
+            margin: 13px 0
+            padding-left: 40px
+            box-shadow: 15px 5px 20px rgba(45, 175, 215, 0.2)
+            background-position: 10px 16px
+            background-repeat: no-repeat
+            border: none
+            &:first-child
+                background-image: url('../images/icon-user.png')
+            &:nth-child(2)
+                background-image: url('../images/icons-mail.svg')
+            &:nth-child(3)
+                background-image: url('../images/icon-phone.svg')
+        button
+            font-family: 'Rubik'
+            font-weight: bold
+            font-size: 16px
+            text-transform: uppercase
+            color: #FFFFFF
+            background: #2DAFCD
+            box-shadow: 15px 5px 20px rgba(45, 175, 215, 0.2)
+            border-radius: 5px
+            width: 100%
+            height: 100%
+            padding: 15px
+            border: none
+            margin-top: 20px
+.inform
+    display: flex
+    justify-content: center
+    padding-bottom: 120px
+
+    &__box
+        background-color: #ffffff
+        width: 20%
+        position: relative
+        height: 200px
+        z-index: 1
+        span
+            display: block
+            position: absolute
+            top: -10px
+            right: 0
+            font-family: 'Rubik'
+            font-size: 144px
+            text-transform: uppercase
+            color: rgba(246, 246, 246, 0.8)
+            z-index: -1
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 25px
+            left: 0
+            width: 5px
+            height: 150px
+            background: #F3FCFF
+            border-radius: 5px
+        &:first-child
+            &::before
+                display: none
+    &__title
+        font-family: 'Rubik'
+        font-weight: bold
+        font-size: 20px
+        text-align: center
+        text-transform: uppercase
+        color: #195B84
+        margin-top: 50px
+    &__text
+        width: 100%
+        font-weight: normal
+        font-family: 'Fira Sans Condensed'
+        font-size: 18px
+        line-height: 122.6%
+        text-align: center
+        letter-spacing: 0.04em
+        color: #195B84
+        margin: 0 auto
+.earnings
+    margin-bottom: 120px
+    &__title
+        font-family: 'Rubik'
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        text-align: center
+        letter-spacing: 0.04em
+        color: #195B84
+        margin-bottom: 60px
+    &__limiter
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__item
+        background: #F4F9FF
+        box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15)
+        border-radius: 5px
+        margin-bottom: 45px
+        position: relative
+
+    &__item--after-line
+        &::after
+            position: absolute
+            content: ''
+            height: 100%
+            width: 2px
+            background-color: #2DAFD7
+            top: 0
+            right: 0
+    &__item--before-line
+        &::before
+            position: absolute
+            content: ''
+            height: 100%
+            width: 2px
+            background-color: #2DAFD7
+            top: 0
+            left: 0
+    &__name
+        font-family: 'Fira Sans Condensed'
+        font-weight: bold
+        font-size: 20px
+        line-height: 122.6%
+        letter-spacing: 0.04em
+        color: #2DAFD7
+        padding: 20px 0 20px 20px
+    &__description
+        font-family: 'Fira Sans Condensed'
+        font-weight: normal
+        font-size: 18px
+        line-height: 122.6%
+        letter-spacing: 0.04em
+        color: #195B84
+        padding: 0 60px 24px 15px
+@media only screen and (max-width: 1079px)
+    .signals
+        &__title
+            margin-right: 40px
+            span
+                &::after
+                    display: none
+    .inform
+        flex-wrap: wrap
+        &__box
+            width: 200px
+    .earnings
+        &__limiter
+            justify-content: center
+        &__who
+            margin-right: 20px
+        &__signals-img
+            display: none
+@media only screen and (max-width: 1036px)
+    .signals
+        margin-bottom: 40px
+@media only screen and (max-width: 1003px)
+    .bg_screen
+        background-size: cover
+    .signals
+        justify-content: center
+        flex-wrap: wrap
+        &__title
+            text-align: center
+            margin-right: 0
+        &__form
+            margin-bottom: 40px
+        &__inputs
+            margin: 0 auto
+    .inform
+        vertical-align: center
+        background: #F3FCFF
+        margin-bottom: 120px
+        padding: 20px 0
+@media only screen and (max-width: 679px)
+    .inform
+        margin-bottom: 60px
+@media only screen and (max-width: 510px)
+    .earnings
+        &__limiter
+            justify-content: center
+            flex-wrap: wrap
+        &__item
+            width: 280px
+        &__item--after-line
+            &::after
+                display: none
+        &__item--before-line
+            &::before
+                display: none
